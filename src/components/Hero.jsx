@@ -43,10 +43,10 @@ const Hero = ({ onResumeClick }) => {
                         <a href="#projects" className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">
                             View Projects
                         </a>
-                        <button onClick={onResumeClick} className="inline-flex items-center justify-center rounded-full border border-cyan-400/30 bg-slate-900/80 px-6 py-3 text-sm font-semibold text-cyan-200 transition hover:border-cyan-300 hover:bg-slate-800">
+                        <button onClick={onResumeClick} className="inline-flex items-center justify-center rounded-full border border-cyan-400/30 bg-slate-900/90 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300 hover:bg-slate-800">
                             Download Resume
                         </button>
-                        <a href="#contact" className="inline-flex items-center justify-center rounded-full border border-slate-600/30 bg-slate-900/80 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-cyan-300 hover:bg-slate-800">
+                        <a href="#contact" className="inline-flex items-center justify-center rounded-full border border-cyan-400/30 bg-slate-900/90 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300 hover:bg-slate-800">
                             Contact Me
                         </a>
                     </motion.div>

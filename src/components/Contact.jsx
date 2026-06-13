@@ -16,7 +16,7 @@ const Contact = () => {
         if (!formRef.current) return;
         if (!serviceId || !templateId || !publicKey) {
             setStatus('error');
-            setErrorMessage('Email delivery is unavailable until EmailJS is configured. Copy .env.example to .env and add your EmailJS service, template, and public key.');
+            setErrorMessage('Email delivery is unavailable because EmailJS is not configured.');
             return;
         }
 
@@ -47,28 +47,40 @@ const Contact = () => {
                                 <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/75">Email</p>
                                 <p className="mt-3 text-lg font-semibold text-white">balatiger40@gmail.com</p>
                             </div>
-                            <p className="text-sm text-slate-400">For recruiter inquiries, collaboration, and healthcare AI opportunities.</p>
+                            <div className="space-y-3">
+                                <p className="text-sm text-slate-400">For recruiter inquiries, collaboration, and healthcare AI opportunities.</p>
+                                <a href="mailto:balatiger40@gmail.com" className="inline-flex w-full items-center justify-center rounded-full bg-cyan-400 px-4 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">Email Now</a>
+                            </div>
                         </div>
                         <div className="flex min-h-[170px] flex-col justify-between rounded-3xl border border-cyan-300/10 bg-slate-950/80 p-6">
                             <div>
                                 <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/75">Phone</p>
-                                <p className="mt-3 text-lg font-semibold text-white">+91 98765 43210</p>
+                                <p className="mt-3 text-lg font-semibold text-white">+91 81108 82532</p>
                             </div>
-                            <p className="text-sm text-slate-400">Available for technical interviews, product calls, and AI strategy discussions.</p>
+                            <div className="space-y-3">
+                                <p className="text-sm text-slate-400">Available for technical interviews, product calls, and AI strategy discussions.</p>
+                                <a href="tel:+918110882532" className="inline-flex w-full items-center justify-center rounded-full bg-cyan-400 px-4 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">Call Now</a>
+                            </div>
                         </div>
                         <div className="flex min-h-[170px] flex-col justify-between rounded-3xl border border-cyan-300/10 bg-slate-950/80 p-6">
                             <div>
                                 <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/75">Location</p>
-                                <p className="mt-3 text-lg font-semibold text-white">Coimbatore, Tamil Nadu</p>
+                                <p className="mt-3 text-lg font-semibold text-white">9°05'11.3"N 77°21'08.2"E</p>
                             </div>
-                            <p className="text-sm text-slate-400">Remote-ready engineering talent with hands-on experience in AI healthcare systems.</p>
+                            <div className="space-y-3">
+                                <p className="text-sm text-slate-400">Kadayanallur, Tenkasi</p>
+                                <a href="https://www.google.com/maps?q=9.086472,77.352278" target="_blank" rel="noreferrer" className="inline-flex w-full items-center justify-center rounded-full bg-cyan-400 px-4 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">View Location</a>
+                            </div>
                         </div>
                         <div className="flex min-h-[170px] flex-col justify-between rounded-3xl border border-cyan-300/10 bg-slate-950/80 p-6">
                             <div>
                                 <p className="text-sm uppercase tracking-[0.24em] text-cyan-300/75">LinkedIn</p>
-                                <a href="https://linkedin.com/in/balasubramani" target="_blank" rel="noreferrer" className="mt-3 block text-lg font-semibold text-cyan-300 hover:text-cyan-200">linkedin.com/in/balasubramani</a>
+                                <a href="https://www.linkedin.com/in/balasubramani-p-2640782a2/" target="_blank" rel="noreferrer" className="mt-3 block text-lg font-semibold text-cyan-300 hover:text-cyan-200">linkedin.com/in/balasubramani-p-2640782a2</a>
                             </div>
-                            <p className="text-sm text-slate-400">Connect with my professional AI portfolio and project highlights.</p>
+                            <div className="space-y-3">
+                                <p className="text-sm text-slate-400">Connect with my professional AI portfolio and project highlights.</p>
+                                <a href="https://www.linkedin.com/in/balasubramani-p-2640782a2/" target="_blank" rel="noreferrer" className="inline-flex w-full items-center justify-center rounded-full bg-cyan-400 px-4 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">View Profile</a>
+                            </div>
                         </div>
                     </div>
                 </motion.div>
@@ -87,8 +99,8 @@ const Contact = () => {
                             Message
                             <textarea name="message" rows="6" required className="mt-2 w-full rounded-3xl border border-slate-700 bg-slate-950/80 px-4 py-3 text-slate-100 outline-none transition focus:border-cyan-300" />
                         </label>
-                        <p className="text-sm text-slate-500">Copy <span className="font-medium text-slate-200">.env.example</span> to <span className="font-medium text-slate-200">.env</span> and add EmailJS credentials to enable live contact delivery.</p>
-                        <button type="submit" className="inline-flex w-full items-center justify-center rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">
+                        <p className="text-sm text-slate-500">Email delivery requires EmailJS configuration. The contact form will work once the site owner adds valid EmailJS settings.</p>
+                        <button type="submit" className="inline-flex w-full items-center justify-center rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-400/20 transition hover:bg-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-300">
                             {status === 'sending' ? 'Sending...' : 'Send Message'}
                         </button>
                         {status === 'sent' && <p className="text-sm text-emerald-300">Message sent successfully. Thank you!</p>}

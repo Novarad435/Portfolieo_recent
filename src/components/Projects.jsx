@@ -28,12 +28,24 @@ const ProjectCard = ({ title, category, tech, bullets, demo, github }) => (
             </div>
         </div>
         <div className="mt-6 flex flex-wrap gap-3">
-            <a href={demo} className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300" target="_blank" rel="noreferrer">
-                Live Demo
-            </a>
-            <a href={github} className="inline-flex items-center justify-center rounded-full border border-cyan-400/30 bg-slate-900/80 px-5 py-3 text-sm font-semibold text-cyan-200 transition hover:border-cyan-300 hover:bg-slate-800" target="_blank" rel="noreferrer">
-                GitHub
-            </a>
+            {demo && demo !== '#' ? (
+                <a href={demo} className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300" target="_blank" rel="noreferrer">
+                    Live Demo
+                </a>
+            ) : (
+                <span className="inline-flex cursor-not-allowed items-center justify-center rounded-full bg-slate-800 px-5 py-3 text-sm font-semibold text-slate-100 border border-slate-700">
+                    Live Demo
+                </span>
+            )}
+            {github && github !== '#' ? (
+                <a href={github} className="inline-flex items-center justify-center rounded-full border border-cyan-400/30 bg-slate-900/90 px-5 py-3 text-sm font-semibold text-white transition hover:border-cyan-300 hover:bg-slate-800" target="_blank" rel="noreferrer">
+                    GitHub
+                </a>
+            ) : (
+                <span className="inline-flex cursor-not-allowed items-center justify-center rounded-full border border-slate-700 bg-slate-800 px-5 py-3 text-sm font-semibold text-slate-100">
+                    GitHub
+                </span>
+            )}
         </div>
     </div>
 );
@@ -52,7 +64,7 @@ const Projects = () => {
                     </div>
                     <div className="flex flex-wrap gap-3">
                         {filters.map((filter) => (
-                            <button key={filter} onClick={() => setActiveFilter(filter)} className={`rounded-full border px-4 py-2 text-sm transition ${activeFilter === filter ? 'border-cyan-300 bg-cyan-400/15 text-cyan-200' : 'border-slate-700 text-slate-300 hover:border-cyan-300 hover:text-cyan-200'}`}>
+                            <button key={filter} onClick={() => setActiveFilter(filter)} className={`rounded-full border px-4 py-2 text-sm transition ${activeFilter === filter ? 'border-cyan-300 bg-cyan-400/15 text-cyan-200' : 'border-slate-600 text-slate-200 hover:border-cyan-300 hover:text-slate-100'}`}>
                                 {filter}
                             </button>
                         ))}

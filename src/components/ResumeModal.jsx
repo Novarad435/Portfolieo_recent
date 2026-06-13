@@ -8,7 +8,7 @@ const ResumeModal = ({ onClose }) => (
                     <h3 className="text-xl font-semibold text-white">Resume Preview</h3>
                     <p className="text-sm text-slate-400">Download or review experience tailored for AI and healthcare recruiters.</p>
                 </div>
-                <button onClick={onClose} className="rounded-full bg-slate-800/80 px-3 py-2 text-slate-200 hover:bg-slate-700">
+                <button onClick={onClose} className="rounded-full bg-cyan-400 px-3 py-2 text-slate-950 font-semibold hover:bg-cyan-300">
                     Close
                 </button>
             </div>
