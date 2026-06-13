@@ -55,7 +55,7 @@ const Projects = () => {
     const filteredItems = activeFilter === 'All' ? projects : projects.filter((item) => item.category === activeFilter);
 
     return (
-        <section id="projects" className="mt-14 scroll-mt-24">
+        <section id="projects" className="mt-14 scroll-mt-32 pt-6">
             <div className="glass-panel rounded-[32px] border border-cyan-300/10 p-8 shadow-soft">
                 <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
                     <div>

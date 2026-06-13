@@ -58,6 +58,16 @@ body.light .text-primary {
     border-radius: 9999px;
 }
 
+#view-projects-button {
+    z-index: 50;
+    order: -1;
+    min-width: 10rem;
+}
+
+#view-projects-button:hover {
+    background-color: rgba(56, 189, 248, 0.95);
+}
+
 .typewriter {
     display: inline-block;
     position: relative;
