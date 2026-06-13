@@ -40,13 +40,13 @@ const Hero = ({ onResumeClick }) => {
                     </motion.div>
 
                     <motion.div className="flex flex-wrap gap-4 pt-3" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45, duration: 0.9 }}>
-                        <a id="view-projects-button" href="#projects" className="inline-flex items-center justify-center rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">
+                        <a id="view-projects-button" href="#projects" className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 transition duration-200 ease-out hover:border-cyan-300 hover:bg-cyan-400 hover:text-slate-950">
                             View Projects
                         </a>
-                        <button onClick={onResumeClick} className="inline-flex items-center justify-center rounded-full border border-cyan-400/30 bg-slate-900/90 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300 hover:bg-slate-800">
+                        <button onClick={onResumeClick} className="inline-flex items-center justify-center rounded-full border border-cyan-400/30 bg-slate-900/90 px-6 py-3 text-sm font-semibold text-white transition duration-200 ease-out hover:border-cyan-300 hover:bg-slate-800">
                             Download Resume
                         </button>
-                        <a href="#contact" className="inline-flex items-center justify-center rounded-full border border-cyan-400/30 bg-slate-900/90 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300 hover:bg-slate-800">
+                        <a href="#contact" className="inline-flex items-center justify-center rounded-full border border-cyan-400/30 bg-slate-900/90 px-6 py-3 text-sm font-semibold text-white transition duration-200 ease-out hover:border-cyan-300 hover:bg-slate-800">
                             Contact Me
                         </a>
                     </motion.div>

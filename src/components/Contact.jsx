@@ -49,7 +49,7 @@ const Contact = () => {
                             </div>
                             <div className="space-y-3">
                                 <p className="text-sm text-slate-400">For recruiter inquiries, collaboration, and healthcare AI opportunities.</p>
-                                <a href="mailto:balatiger40@gmail.com" className="inline-flex w-full items-center justify-center rounded-full bg-cyan-400 px-4 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">Email Now</a>
+                                <a href="mailto:balatiger40@gmail.com" className="inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 border border-white/20 transition duration-200 ease-out hover:bg-cyan-400 hover:text-slate-950">Email Now</a>
                             </div>
                         </div>
                         <div className="flex min-h-[170px] flex-col justify-between rounded-3xl border border-cyan-300/10 bg-slate-950/80 p-6">
@@ -59,7 +59,7 @@ const Contact = () => {
                             </div>
                             <div className="space-y-3">
                                 <p className="text-sm text-slate-400">Available for technical interviews, product calls, and AI strategy discussions.</p>
-                                <a href="tel:+918110882532" className="inline-flex w-full items-center justify-center rounded-full bg-cyan-400 px-4 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">Call Now</a>
+                                <a href="tel:+918110882532" className="inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 border border-white/20 transition duration-200 ease-out hover:bg-cyan-400 hover:text-slate-950">Call Now</a>
                             </div>
                         </div>
                         <div className="flex min-h-[170px] flex-col justify-between rounded-3xl border border-cyan-300/10 bg-slate-950/80 p-6">
@@ -69,7 +69,7 @@ const Contact = () => {
                             </div>
                             <div className="space-y-3">
                                 <p className="text-sm text-slate-400">Kadayanallur, Tenkasi</p>
-                                <a href="https://www.google.com/maps?q=9.086472,77.352278" target="_blank" rel="noreferrer" className="inline-flex w-full items-center justify-center rounded-full bg-cyan-400 px-4 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">View Location</a>
+                                <a href="https://www.google.com/maps?q=9.086472,77.352278" target="_blank" rel="noreferrer" className="inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 border border-white/20 transition duration-200 ease-out hover:bg-cyan-400 hover:text-slate-950">View Location</a>
                             </div>
                         </div>
                         <div className="flex min-h-[170px] flex-col justify-between rounded-3xl border border-cyan-300/10 bg-slate-950/80 p-6">
@@ -79,7 +79,7 @@ const Contact = () => {
                             </div>
                             <div className="space-y-3">
                                 <p className="text-sm text-slate-400">Connect with my professional AI portfolio and project highlights.</p>
-                                <a href="https://www.linkedin.com/in/balasubramani-p-2640782a2/" target="_blank" rel="noreferrer" className="inline-flex w-full items-center justify-center rounded-full bg-cyan-400 px-4 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300">View Profile</a>
+                                <a href="https://www.linkedin.com/in/balasubramani-p-2640782a2/" target="_blank" rel="noreferrer" className="inline-flex w-full items-center justify-center rounded-full bg-white px-4 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 border border-white/20 transition duration-200 ease-out hover:bg-cyan-400 hover:text-slate-950">View Profile</a>
                             </div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@ const Contact = () => {
                             <textarea name="message" rows="6" required className="mt-2 w-full rounded-3xl border border-slate-700 bg-slate-950/80 px-4 py-3 text-slate-100 outline-none transition focus:border-cyan-300" />
                         </label>
                         <p className="text-sm text-slate-500">Email delivery requires EmailJS configuration. The contact form will work once the site owner adds valid EmailJS settings.</p>
-                        <button type="submit" className="inline-flex w-full items-center justify-center rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-400/20 transition hover:bg-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-300">
+                        <button type="submit" className="inline-flex w-full items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 border border-white/20 transition duration-200 ease-out hover:bg-cyan-400 hover:text-slate-950 focus:outline-none focus:ring-2 focus:ring-cyan-300">
                             {status === 'sending' ? 'Sending...' : 'Send Message'}
                         </button>
                         {status === 'sent' && <p className="text-sm text-emerald-300">Message sent successfully. Thank you!</p>}
