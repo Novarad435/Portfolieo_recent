@@ -12,7 +12,24 @@ const ResumeModal = ({ onClose }) => (
                     Close
                 </button>
             </div>
-            <iframe title="Resume preview" src="/resume.pdf" className="h-[80vh] w-full bg-slate-900" />
+            <iframe
+                title="Resume preview"
+                src={`${import.meta.env.BASE_URL}resume.pdf`}
+                className="h-[80vh] w-full bg-slate-900"
+            />
+            <div className="border-t border-slate-800/70 bg-slate-950/95 px-5 py-4 text-center">
+                <p className="text-sm text-slate-400">
+                    If Brave blocks the embedded PDF, open it directly instead.
+                </p>
+                <a
+                    href={`${import.meta.env.BASE_URL}resume.pdf`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-3 inline-flex rounded-full bg-white px-5 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 transition duration-200 ease-out hover:bg-cyan-400 hover:text-slate-950"
+                >
+                    Open Resume in New Tab
+                </a>
+            </div>
         </motion.div>
     </motion.div>
 );
